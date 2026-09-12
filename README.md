@@ -7,6 +7,7 @@ Nyilvános GitHub Pages oldal a **Neptune – nem hivatalos böngészőbővítm�
 - `index.html` – nyilvános kezdőoldal
 - `neptune-privacy.html` – Chrome Web Store-hoz használható adatvédelmi tájékoztató
 - `styles.css` – közös megjelenés
+- `neptune-icon.png` – hivatalos Neptune projektikon
 
 ## Chrome Web Store Privacy Policy URL
 
