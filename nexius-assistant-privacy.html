@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="hu"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nexius Assistant – Adatkezelési tájékoztató</title>
+<style>body{max-width:760px;margin:40px auto;padding:0 22px;font:16px/1.65 system-ui,sans-serif;color:#252235}h1,h2{line-height:1.25;color:#6355db}a{color:#6355db}small{color:#666}</style>
+<h1>Nexius Assistant – Adatkezelési tájékoztató</h1>
+<p>Ez a tájékoztató a Nexius Assistant 1.0.0 böngészőbővítmény működését ismerteti. A Nexius Assistant független, nem hivatalos bővítmény.</p>
+<h2>Helyben kezelt adatok</h2>
+<p>A bővítmény a böngésző helyi tárában és IndexedDB-adatbázisában tárolja a tantárgyi profilokat, saját TXT-kérdésbankokat, feltöltött PDF-eket, keresőindexeket, beállításokat, a felhasználó által megadott szolgáltatói API-kulcsokat és a funkciókhoz szükséges futásállapotot. A támogatott Nexius-feladatoldalakon feldolgozza az aktuális kérdés és válaszlehetőségek szövegét, a megjelenített megoldásokat, valamint a kurzus- és fejezetcímet.</p>
+<p>Az új telepítés üres tudásbázissal indul. A helyi kérdésbankkeresés és a PDF-ek szövegindexelése a felhasználó gépén történik. Nincs automatikus gépek közötti adatszinkron.</p>
+<h2>Opcionális AI-szolgáltatások</h2>
+<p>Az AI-funkció alapértelmezés szerint kikapcsolt. Ha a felhasználó bekapcsolja, és saját API-kulcsot ad meg, a bővítmény a kiválasztott Google Gemini vagy OpenAI API-t használhatja. Ilyenkor az aktuális kérdés és válaszlehetőségek a szolgáltatóhoz kerülnek. Engedélyezett tudásbázis-használatnál a profilnevek, kurzus- és fejezetcím, releváns helyi kérdésbankpéldák, PDF-szövegrészletek, forrásfájlnevek és oldalszámok is átadhatók. Részlegesen kereshető PDF-nél, sikertelen indexelésnél vagy releváns találat hiányában a teljes érintett PDF is csatolható.</p>
+<p>A kiválasztott szolgáltatóhoz a saját API-kulcs is továbbításra kerül a kérés hitelesítéséhez. A külön „Kapcsolat tesztelése” művelet egyszerű tesztkérdést küld a felhasználó által kiválasztott szolgáltatónak, saját tananyag csatolása nélkül. Az AI-válaszok nem kerülnek programkódként végrehajtásra.</p>
+<p>A szolgáltatók saját feltételei és adatkezelési szabályai vonatkoznak a hozzájuk küldött adatok kezelésére. Lásd a <a href="https://ai.google.dev/gemini-api/terms">Gemini API feltételeit</a> és az <a href="https://developers.openai.com/api/docs/guides/your-data">OpenAI API-adatkezelési tájékoztatását</a>. A bővítmény önmagában nem garantálja, hogy a szolgáltató egyáltalán nem őriz meg adatot.</p>
+<h2>Fejlesztői adatküldés és megfigyelés</h2>
+<p>A bővítmény nem tartalmaz saját fejlesztői háttérszervert, reklámkövetőt vagy analitikai rendszert. Nem küld külön telemetriát, kérdésbankot vagy PDF-et a fejlesztőnek. Nem kéri és nem továbbítja a Nexius-jelszót. Nem gyűjt általános böngészési előzményeket és nem figyeli a támogatott funkciókon kívüli weboldalakat.</p>
+<p>Az adatok használata kizárólag a bővítmény ismertetett felhasználói funkcióit szolgálja; azokat a bővítmény nem értékesíti, nem adja át hirdetési célra, és nem használja hitelképesség megállapítására. A Google API-kból kapott adatok felhasználása megfelel a Chrome Web Store felhasználói adatokra vonatkozó szabályzatának, beleértve a Limited Use követelményeket.</p>
+<h2>Megőrzés, export és törlés</h2>
+<p>A saját források és profilok a Tudásbázis felületén eltávolíthatók, az API-kulcsok a beállításokban törölhetők. A helyi adatokat a böngésző bővítményadatai között is lehet törölni. A bővítmény eltávolítása a hozzá tartozó helyi adatok elvesztésével járhat. A bővítmény frissítése megtartja a helyi adatokat.</p>
+<p>A felhasználó saját döntése alapján exportálhatja a TXT-kérdésbankokat és eredeti PDF-eket. Az exportált fájlok további tárolásáról, megosztásáról és törléséről ő gondoskodik. Az ellenőrizetlen vagy ellentmondásos megoldások nem szerepelnek az ellenőrzött TXT-exportban. Az AI-szolgáltatóhoz már továbbított adatok törlésére a szolgáltató saját eljárásai vonatkoznak.</p>
+<h2>Kapcsolat</h2>
+<p>Adatkezelési kérdéssel a Chrome Web Store Nexius Assistant adatlapján feltüntetett fejlesztői elérhetőségen lehet kapcsolatba lépni.</p>
+</html>
